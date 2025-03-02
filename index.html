@@ -50,7 +50,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://keunhong.com">
       <span class="icon">
@@ -80,7 +80,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -88,7 +88,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">Geometry-Aware Texture Generation for 3D Head Modeling with Artist-driven Control</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
@@ -112,8 +112,8 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Ubisoft LaForge,</span>
+            <span class="author-block"><sup>2</sup>York University</span>
           </div>
 
           <div class="column has-text-centered">
@@ -258,31 +258,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Fulfilling a precise artistic vision while creating realistic virtual human characters requires extensive manual efforts. This paper proposes a novel approach to streamline this process, generating 3D head geometry and enabling precise control over skin tone and fine-grained modification of facial details such as wrinkles. User-specified modifications are conveniently propagated over the entire assets by our models, effectively reducing the amount of manual intervention needed to achieve a specific artistic vision. This is achieved by our proposed texture-generation pipeline that leverages correlations between texture and geometry for different head shapes, ethnicity, and gender. Our method allows for accurate skin-tone control while keeping the other appearance factors unchanged. Lastly, we introduce a method for fine-grained control over the details of the generated heads, which enables artists to freely modify one texture map and have changes cohesively propagated to the other maps. Our experiments show that our method produces diverse and well-behaved geometries, thanks to our GNN-based model, and synthesizes textures that are coherent with the geometry using a CNN-based GAN. We also achieve precise and intuitive skin-tone control through a single control parameter and obtain plausible textures for both face skin and lips. Our experiments with fine-grained editing on common artists' tasks, such as adding wrinkles or removing a beard, showcase how our method simplifies the head generation workflow by cohesively propagating changes to all texture maps.
           </p>
         </div>
       </div>
@@ -474,11 +450,8 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            We thank <a
+              href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> for providing the website template.
           </p>
         </div>
       </div>
