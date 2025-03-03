@@ -307,7 +307,15 @@
 
 <figure>
   <img src="./static/images/fig1_page-0001.jpg" alt="Dataset samples" style="width:90%">
-  <figcaption>A sample from the proposed <em>FFHQ-UV-Intrinsics</em> dataset. </figcaption>
+  <figcaption>
+
+<p>
+  Overview of the proposed pipeline. Generator <i>𝓕</i> generates a mesh and <i>G</i> generates an intermediate skin representation: a melanin map <i>𝓜</i> and a high-frequency details map <i>𝓗</i>. 
+  <i>G<sub>𝓐</sub></i> generates a color map <i>𝓐</i> from <i>𝓜</i>, allowing for precise control of skin tone. 
+  <i>G<sub>𝓒</sub></i> generates a final skin reflectance map <i>𝓒</i>, incorporating arbitrary manipulations on <i>𝓗</i>. 
+  <i>G<sub>ε</sub></i> decomposes the intrinsic face reflectance maps, which can be used to render realistic heads.
+</p>
+   </figcaption>
 </figure>
         <!-- Interpolating. -->
         <h3 class="title is-4">Interpolating states</h3>
