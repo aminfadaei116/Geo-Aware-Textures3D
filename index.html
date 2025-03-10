@@ -195,7 +195,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Latent vector <i>G</i> 
+              Latent vector <i>v<sub>t</sub></i> is passed the generator which is responsible for generating different melanin and edge maps. In addtion by passing <i>v<sub>g</sub></i> to model <i>𝓕</i> we can generate the face geometry. 
             </p>
             <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/shape.mp4"
@@ -212,8 +212,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              In this section we are able to modify the skin color of the avatar by changing the scalar value &alpha;. The higher the &alpha; is the darker the skin will get.
             </p>
             <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/color.mp4"
@@ -230,7 +229,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              In this section we are able to modify the skin color of the avatar by changing the scalar value &alpha;
+              By modifying the high frequency edge map we are able to change fine detail appearance of the color map.
             </p>
             <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/edit.mp4"
@@ -243,7 +242,7 @@
         <div class="item item-fullbody">
           
         </div>
-        Our method allows for artistic control in three steps.
+        Our method enables the artists/designers to control the appearance of the avatars in three stages. (1) Shape and General Skin Appearance (2) Skin Tone Control (3) Fine Details.
       </div>
     </div>
   </div>
